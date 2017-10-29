@@ -48,7 +48,7 @@ random_walk <- function(time = 10000,
     walk$y[i + 1] <- walk$y[i] + walk$dy[i + 1]
   }
   
-  # Plotting each position in time using geom_path()
+  # Plotting each position in time using geom_path
   plot <- ggplot(walk, aes(x, y, color = walk)) +
     geom_path() + 
     labs(color = "Time") +
